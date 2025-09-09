@@ -29,3 +29,24 @@ RF02 - Otimização de Rota: O sistema deve fornecer ao motorista a melhor ordem
 RF03 - Sistema de Notificações: O aplicativo deve enviar notificações push aos passageiros, em horários predefinidos, para lembrá-los de confirmar sua participação na viagem.
 RF04 - Comunicação Centralizada: O aplicativo deve eliminar a necessidade de comunicação via múltiplos grupos de WhatsApp, centralizando as confirmações e informações em uma única plataforma.
 RF05 - Gestão de Passageiros: O motorista deve ser capaz de adicionar ou remover passageiros dos grupos de viagem e simular corridas para prever a rota e o tempo de percurso.
+
+## 5. Restrições e Premissas
+5.1. Restrições
+O sistema deve ser um aplicativo móvel compatível com as plataformas Android e iOS.
+A primeira versão não incluirá funcionalidade de pagamento dentro do aplicativo.
+5.2. Premissas
+Assume-se que os motoristas e passageiros possuem smartphones e estão dispostos a usar um aplicativo para organizar as viagens.
+Assume-se que o motorista terá acesso a serviços de localização (GPS) para a funcionalidade de otimização de rota.
+A premissa de que a otimização da rota deve ser a mais eficiente em termos de tempo e distância será baseada nos endereços de coleta fornecidos pelos passageiros.
+
+## 6. Critérios de Sucesso
+O sucesso do projeto será medido pelos seguintes critérios:
+Motorista:
+Redução de pelo menos 20% no tempo e no gasto de combustível na rota de coleta, devido à otimização.
+Eliminação de 100% dos casos de passageiros esquecidos por não visualização da mensagem de confirmação.
+Passageiro:
+Redução de 80% das confusões de comunicação ao usar o aplicativo em vez de grupos de WhatsApp.
+Aumento de 50% na taxa de confirmação de presença com antecedência, devido ao sistema de lembretes.
+Negócio:
+Aumento da satisfação e retenção de passageiros ao oferecer uma ferramenta mais confiável e organizada.
+
