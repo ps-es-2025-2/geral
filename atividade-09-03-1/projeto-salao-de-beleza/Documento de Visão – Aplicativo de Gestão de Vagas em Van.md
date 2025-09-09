@@ -6,7 +6,7 @@ Atualmente, a organização de viagens de van é realizada de forma manual, com 
 1.2. Motivação e Objetivos
 O projeto visa desenvolver um aplicativo móvel para automatizar e otimizar o processo de organização das corridas de van. O objetivo principal é oferecer uma plataforma centralizada onde motoristas possam organizar suas rotas de forma eficiente e passageiros possam confirmar sua participação de forma simples, reduzindo a carga de trabalho manual e minimizando erros de comunicação.
 
-2. Descrição Geral
+## 2. Descrição Geral
 2.1. Perspectiva do Produto
 O "App Vagas Van" será um aplicativo móvel (para Android e iOS) que conectará o motorista de van aos seus passageiros. Para os passageiros, funcionará como uma ferramenta de comunicação para confirmar sua participação nas viagens e receber notificações. Para o motorista, servirá como um painel de gerenciamento para visualizar os passageiros confirmados para cada turno, otimizar a rota de coleta e gerenciar as listas de passageiros.
 2.2. Usuários Principais (Atores)
@@ -23,7 +23,7 @@ Visualizar a melhor ordem possível para a coleta dos passageiros, otimizando te
 Adicionar e remover passageiros de grupos específicos.
 Simular corridas.
 
-3. Requisitos de Alto Nível (Features)
+## 3. Requisitos de Alto Nível (Features)
 RF01 - Gestão de Turnos e Vagas: O motorista deve ser capaz de criar e gerenciar grupos de passageiros por turno, permitindo que os passageiros confirmem sua participação para cada viagem.
 RF02 - Otimização de Rota: O sistema deve fornecer ao motorista a melhor ordem de coleta dos passageiros confirmados, com o objetivo de minimizar tempo e distância percorrida.
 RF03 - Sistema de Notificações: O aplicativo deve enviar notificações push aos passageiros, em horários predefinidos, para lembrá-los de confirmar sua participação na viagem.
