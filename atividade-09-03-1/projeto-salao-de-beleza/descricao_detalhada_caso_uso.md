@@ -1,0 +1,85 @@
+[caso_de_uso_realizar_agendamento.md](https://github.com/user-attachments/files/22225437/caso_de_uso_realizar_agendamento.md)
+# Descrição detalhada de cada Caso de Uso
+
+## Grupo 1
+| Aluno | Github |
+|-------------|-------------|
+|Gabriel Freitas dos Reis | GabrielFRails
+|Gabriel Rodrigues Silva | Gabriellrs
+|Laura Martins Vieira Gonçalves | lauramvg1821
+|Léia Santos Costa | Leia27
+|Tallya Jesus Sousa Barbosa | tallya01
+
+## Nome
+Realizar Agendamento
+
+## Descrição Sucinta
+Permite ao cliente selecionar um serviço, escolher um profissional e um horário disponível para agendar um atendimento no salão de beleza.
+
+## Atores
+- **Cliente**: Usuário final que está realizando o agendamento.
+
+## Pré-condição
+O cliente já deve ter consultado a lista de serviços e horários disponíveis.
+
+## Pós-condições
+- Um novo agendamento é criado e registrado no sistema.
+- O horário selecionado fica indisponível para outros agendamentos.
+- O cliente é notificado com a confirmação.
+
+## Fluxo Básico
+1. O cliente acessa o aplicativo e seleciona a opção "Realizar agendamento".
+2. O sistema exibe a lista de serviços oferecidos.
+3. O cliente seleciona um serviço.
+4. O sistema exibe a lista de profissionais que realizam o serviço selecionado.
+5. O cliente seleciona um profissional.
+6. O sistema exibe a agenda do profissional com os horários disponíveis.
+7. O cliente escolhe um horário.
+8. O sistema pede a confirmação dos dados do agendamento (serviço, profissional, horário).
+9. O cliente confirma.
+10. O sistema registra o agendamento.
+11. O sistema envia uma notificação de confirmação para o cliente (via WhatsApp ou notificação push).
+12. O caso de uso é concluído.
+
+## Fluxos Alternativos
+- **A1: Cliente já possui cadastro**: Antes do passo 8, o sistema verifica se o cliente já está cadastrado (com base no nome e telefone). Se sim, o sistema recupera os dados do cliente e avança para o passo 8.
+- **A2: Cliente não consegue horário**: No passo 6, se o sistema não encontrar horários disponíveis para o profissional e serviço selecionados, ele informa ao cliente e sugere outros profissionais ou dias. O cliente pode escolher um novo profissional ou sair.
+- **A3: Agendamento de mais de um serviço**: Após o passo 7, o cliente pode selecionar a opção "Adicionar outro serviço" e o fluxo retorna ao passo 2.
+
+## Fluxos de Exceção
+- **E1: Conflito de agendamento**: No passo 10, se o horário selecionado for ocupado por outro cliente (por exemplo, devido a uma sincronização lenta da base de dados), o sistema aborta o agendamento e notifica o cliente, pedindo para selecionar outro horário.
+
+## Estrutura de Dados
+### Agendamento
+- ID do agendamento (chave primária)
+- ID do cliente (chave estrangeira)
+- ID do profissional (chave estrangeira)
+- ID do serviço (chave estrangeira)
+- Data e hora
+- Status (por exemplo, "confirmado", "cancelado")
+
+### Cliente
+- ID do cliente (chave primária)
+- Nome
+- Telefone
+- Histórico de serviços
+
+### Serviço
+- ID do serviço (chave primária)
+- Nome do serviço
+- Preço
+
+### Profissional
+- ID do profissional (chave primária)
+- Nome do profissional
+
+## Regras de Negócio
+- **RN1**: Um horário só pode ser agendado por um único cliente.
+- **RN2**: O agendamento só pode ser realizado com horários que estejam marcados como "disponíveis" no sistema.
+- **RN3**: O cliente deve ser notificado sobre o sucesso do agendamento.
+- **RN4**: O sistema deve armazenar um histórico de serviços realizados por cliente.
+
+## Observações
+- Este caso de uso é a funcionalidade principal do MVP do aplicativo, pois ele automatiza o processo manual de agendamento.
+- A notificação de confirmação pode ser via WhatsApp, utilizando a API do WhatsApp, ou por meio de notificações push, se a plataforma permitir.
+- A implementação de pagamento online será implementada em versões futuras e não faz parte deste caso de uso.
