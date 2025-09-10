@@ -72,9 +72,10 @@ Funcionalidades como pagamento online e login com redes sociais serão considera
 O sucesso do projeto será medido pelos seguintes critérios:
 * Redução de 50% do tempo gasto pela proprietária com marcações manuais via WhatsApp e telefone.
   * Justificativa: ao implantar o aplicativo, será necessário um prazo para adesão das clientes do salão. Além disso, novas clientes precisarão conhecer e aderir ao aplicativo, e enquanto isso realizar os agendamentos ainda com a proprietária.
-*Garantia de 100% de disponibilidade real para agendamentos feitos via app: O sistema não permitirá que um horário já ocupado (seja por agendamento via app ou manual) seja agendado novamente pelo aplicativo, eliminando conflitos de agendamento originados na plataforma.
+* Garantia de 100% de disponibilidade real para agendamentos feitos via app: O sistema não permitirá que um horário já ocupado (seja por agendamento via app ou manual) seja agendado novamente pelo aplicativo, eliminando conflitos de agendamento originados na plataforma.
    * Justificativa: Redução de 90% dos conflitos de agendamento manuais: Ao centralizar a visualização da agenda, a proprietária terá uma ferramenta confiável para consultar antes de realizar agendamentos manuais, minimizando erros.
 * Aumento a partir de 40% na retenção de clientes ao oferecer uma forma mais prática e autônoma de agendamento.
   * Justificativa: o cliente terá acesso aos serviços, valores e à agenda de forma instantânea, sem a necessidade de esperar retorno da proprietária para realizar um agendamento. O aumento pode ser maior caso haja uma boa adesão ao app.
 * Aumento de receita com o uso efetivo dos relatórios semanais para planejar promoções e entender a demanda de serviços.
   * Justificativa: os relatórios permitirão a elaboração de estratégias precisas para captação e retenção de clientes
+
